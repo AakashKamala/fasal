@@ -295,7 +295,11 @@ const ChatDemo: React.FC = () => {
       // Simulate response
       setIsTyping(true);
 
-      const response = await axios.post("http://localhost:9003/chat", {
+      // const response = await axios.post("http://localhost:9003/chat", {
+      //   "prompt": prompt
+      // })
+
+      const response = await axios.post("https://fasal-b116.onrender.com/chat", {
         "prompt": prompt
       })
 
